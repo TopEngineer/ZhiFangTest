@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="700dp"
+    android:layout_height="640dp"
+    android:background="@mipmap/bg_kuang"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:text="身高体重"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="身高"
+            android:gravity="center"
+            android:textColor="#212121"
+            android:textSize="45sp"/>
+        <TextView
+            android:id="@+id/tv_sg_v"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#212121"
+            android:textSize="45sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="cm"
+            android:gravity="center"
+            android:textColor="#212121"
+            android:textSize="45sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="体重"
+            android:gravity="center"
+            android:textColor="#212121"
+            android:textSize="45sp"/>
+        <TextView
+            android:id="@+id/tv_tz_v"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#212121"
+            android:textSize="45sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="kg"
+            android:gravity="center"
+            android:textColor="#212121"
+            android:textSize="45sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/mea_text_btn"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="开始"
+            android:textColor="@color/mea_text_btn"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

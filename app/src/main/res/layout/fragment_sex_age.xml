@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="700dp"
+    android:layout_height="600dp"
+    android:background="#00000000"
+    android:gravity="center_vertical"
+    tools:ignore="MissingPrefix"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="信息"
+        android:layout_marginTop="10dp"
+        fontPath="fonts/kaiti.ttf"
+        android:textColor="#000000"
+        android:textSize="45sp" />
+
+
+        <RadioGroup
+            android:id="@+id/rg_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                fontPath="fonts/kaiti.ttf"
+                android:id="@+id/rb_man"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="35sp" />
+
+            <RadioButton
+                fontPath="fonts/kaiti.ttf"
+                android:id="@+id/rb_woman"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="35sp" />
+
+        </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            fontPath="fonts/kaiti.ttf"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="年龄:"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+        <EditText
+            fontPath="fonts/kaiti.ttf"
+            android:id="@+id/et_age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textSize="45sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            fontPath="fonts/kaiti.ttf"
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="取消"
+            android:visibility="gone"
+            android:textColor="@color/mea_text_btn"
+            android:textSize="45sp" />
+
+        <TextView
+            fontPath="fonts/kaiti.ttf"
+            android:id="@+id/tv_ok"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/mea_text_btn"
+            android:textSize="45sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</LinearLayout>
+

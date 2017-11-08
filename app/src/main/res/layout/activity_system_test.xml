@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_system_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3F51B5">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/btn_bg"
+            android:gravity="center_vertical"
+            android:onClick="onTestClick"
+            android:text="返回"
+            android:textColor="@color/text_btn"
+            android:textSize="22sp" />
+
+        <com.beardedhen.androidbootstrap.AwesomeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="30sp"
+            app:bootstrapBrand="secondary"
+            app:bootstrapText="脂肪" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.beardedhen.androidbootstrap.AwesomeTextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            app:bootstrapBrand="primary"
+
+            app:bootstrapText="单片机" />
+
+        <com.beardedhen.androidbootstrap.BootstrapDropDown
+            android:id="@+id/drop_dpj"
+            android:layout_width="185dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            app:bootstrapBrand="secondary"
+            app:bootstrapExpandDirection="down"
+            app:bootstrapSize="xl"
+            app:bootstrapText="选择串口"
+            app:dropdownResource="@array/baudrates_name"
+            app:roundedCorners="true" />
+        <com.beardedhen.androidbootstrap.AwesomeTextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            app:bootstrapBrand="primary"
+
+            app:bootstrapText="波特率" />
+
+        <com.beardedhen.androidbootstrap.BootstrapDropDown
+            android:id="@+id/drop_bra"
+            android:layout_width="185dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            app:bootstrapBrand="secondary"
+            app:bootstrapExpandDirection="down"
+            app:bootstrapSize="xl"
+            app:bootstrapText="9600"
+            app:dropdownResource="@array/baudrates_name"
+            app:roundedCorners="true" />
+
+        <com.beardedhen.androidbootstrap.AwesomeTextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            app:bootstrapBrand="success"
+            android:visibility="gone"
+            app:bootstrapText="打印机机" />
+
+        <com.beardedhen.androidbootstrap.BootstrapDropDown
+            android:id="@+id/drop_printer"
+            android:layout_width="185dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            app:bootstrapBrand="warning"
+            app:bootstrapExpandDirection="down"
+            app:bootstrapSize="xl"
+            android:visibility="gone"
+            app:bootstrapText="选择串口"
+            app:dropdownResource="@array/baudrates_name"
+            app:roundedCorners="true" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/bt_dpj_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:onClick="onTestClick"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="xl"
+            android:visibility="visible"
+            app:bootstrapText="脂肪测量" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/bt_sgtz_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:onClick="onTestClick"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="xl"
+            android:visibility="visible"
+            app:bootstrapText="身高体重" />
+
+        <TextView
+            android:id="@+id/tv_tem"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="--℃"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/et_dpj"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            android:gravity="left|top"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            app:bootstrapSize="lg"
+            android:visibility="gone"
+            app:roundedCorners="true" />
+
+
+    </RelativeLayout>
+</LinearLayout>
